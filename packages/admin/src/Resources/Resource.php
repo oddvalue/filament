@@ -115,7 +115,7 @@ class Resource
 
         if (
             method_exists($policy, 'before') &&
-            is_bool($response = $policy->before($user, $action))
+            is_bool($response = $policy->before($user, $action, $record ?? $model))
         ) {
             return $response;
         }
