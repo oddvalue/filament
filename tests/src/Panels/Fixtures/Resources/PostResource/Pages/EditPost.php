@@ -16,7 +16,7 @@ class EditPost extends EditRecord
             Actions\ViewAction::make(),
             Actions\ActionGroup::make([
                 Actions\DeleteAction::make(),
-            ])
+            ]),
         ];
     }
 
